@@ -1,0 +1,148 @@
+<!--Abhi Bastiany
+    Version 1
+    Final Project Sign Up Page-->
+    
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device=width, initial-scale=1">
+    <title>Learning to Skydive | Sign Up</title>
+    <link rel="shortcut icon" href="images/parachute-836105_1280.png">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/form.css">
+    <link rel="stylesheet" href="styles/slicknav.css">
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="js/jquery.slicknav.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function (){
+        $('#nav_menu').slicknav({prependTo:"#mobile_menu"}); });
+    </script>
+</head>
+
+<body>
+    <header>
+        <img src="images/25000ft(1).JPG" alt="View from 25,000 ft.">
+        <h1>My Experience Learning to Skydive</h1>
+    </header>
+    <nav id="mobile_menu"></nav>
+    <nav id="nav_menu">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="media/media.html">Photos/Videos</a></li>
+            <li class="courses"><a href="courses/complete.html">Completed Courses</a>
+                <ul>
+                    <li><a href="courses/completed_courses/airborne.html">Airborne</a></li>
+                    <li><a href="courses/completed_courses/dbsl.html">DBSL</a></li>
+                    <li><a href="courses/completed_courses/idis.html">IDIS</a></li>
+                </ul>
+            </li>
+            <li><a href="courses/future.html">Future Courses</a></li>
+            <li><a href="signup.html" class="current">Member Sign Up</a></li>
+        </ul>
+    </nav>
+    <main>
+      <article>
+       <h2>Sign Up Here to Achieve Your Dreams</h2>
+       <p>Members have access to email and text message updates of progress in my journey.  You also have the ability to reach out to me for guidance and advice along your own journey.  Together, we can accomplish our dreams!</p>
+        </article>
+        <section>
+    		<form action="register.html" method="get"
+        		name="signup_form" id="signup_form">
+    			<fieldset id="personal">
+	        		<legend>Personal Information</legend>
+        			<label for="first_name">First Name:</label>
+        			<input type="text" name="first_name" id="first_name" autofocus required>
+					<br>
+					<label for="last_name">Last Name:</label>
+					<input type="text" name="last_name" id="last_name" required>
+					<br>
+                    <label for="address">Address:</label>
+                    <input type="text" name="address" id="address">
+					<br>
+					<label for="city">City:</label>
+					<input type="text" name="city" id="city">
+					<br>
+					<label for="state">State:</label>
+					<input type="text" name="state" id="state" maxlength="2" placeholder="2-character code">
+					<br>
+					<label for="zip">ZIP Code:</label>
+                <input type="text" name="zip" id="zip" placeholder="5 or 9 digits" 
+				           pattern="^\d{5}(-\d{4})?$" title="Either 5 or 9 digits">
+				    <br>
+				    <label for="email">E-Mail:</label>
+                <input type="email" name="email" id="email" required>
+	        		<br>
+					<label for="phone">Phone Number:</label>
+                   <input type="tel" name="phone" id="phone" placeholder="999-999-9999" 
+				       	   pattern="\d{3}[\-]\d{3}[\-]\d{4}" title="Must be 999-999-999 format">
+				       	   <br>
+				    <fieldset id="inner">
+				        <legend>Preferred Contact Method</legend>
+				        <input type="radio" name="contact_method" id="text" value="text">
+				        <label for="text">Text Only</label>
+				        <input type="radio" name="contact_method" id="e" value="e">
+				        <label for="e">Email Only</label>
+				        <input type="radio" name="contact_method" id="e+t" value="e+t">
+				        <label for="e+t">Email and Text</label>
+				    </fieldset>
+				</fieldset>
+				<fieldset id="describe">
+				    <legend>Member Details</legend>
+				    <label for="skill">Skydiving Skill Level:</label>
+				    <select id="skill">
+                    <optgroup label="Desire to Learnn">
+				        <option value="Desire to learn">Dreamer</option>
+				    </optgroup>
+				    <optgroup label="Done a tandem jump">
+				        <option value="Done a tandem jump">Novice</option>
+				    </optgroup>
+                    <optgroup label="BAC graduate">
+				        <option value="BAC graduate">Airborne</option>
+				    </optgroup>
+                    <optgroup label="Completed a Skydiving Course">
+				        <option value="Completed a Skydiving Course">Beginner</option>
+				    </optgroup>
+                    <optgroup label="A-License Recipient">
+				        <option value="A-License Recipient">Licensed Beginner</option>
+				    </optgroup>
+                    <optgroup label="MFF Graduate">
+				        <option value="MFF Graduate">Free-Faller</option>
+				    </optgroup>
+                    <optgroup label="Between 1 - 100 jumps">
+				        <option value="Between 1 - 100 jumps">Amateur</option>
+				    </optgroup>
+                    <optgroup label="Between 100 - 200 jumps">
+				        <option value="Between 100 - 200 jumps">Adept</option>
+				    </optgroup>
+                    <optgroup label="200+ jumps">
+				        <option value="200+ jumps">Expert</option>
+				    </optgroup>
+                    </select>
+				    <br>
+				    <label id="comment" for="goals">Comments:</label>
+				    <textarea id="goals" placeholder="Tell me about yourself and your goals."></textarea>
+				    <br>
+				    <label for="date">Last Jump (if any):</label>
+				    <input type="date" id="date">
+                   <br>
+                   <p id="checkboxes">Are any of these obstacles that you can see hindering your dreams?</p>
+                   <br>
+                    <input type="checkbox" name="check1" value="money" class="check">&nbsp;Money
+                    <input type="checkbox" name="check2" value="fear" class="check">&nbsp;Fear
+                    <input type="checkbox" name="check3" value="injury" class="check">&nbsp;Injury
+				</fieldset>
+				<fieldset id="buttons">
+					<legend>Complete Sign Up</legend>
+					<label>&nbsp;</label>
+					<input type="submit" id="submit" value="submit">
+					<input type="reset" id="reset" value="Clear Form"><br>
+				</fieldset>
+			</form>
+		</section>
+    </main>
+    <footer>
+       <p>Image at the top of this page is property of Abhi Bastiany</p>
+    </footer>
+</body>

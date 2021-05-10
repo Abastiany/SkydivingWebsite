@@ -1,0 +1,60 @@
+<!--Abhi Bastiany
+    Version 1
+    Final Project Completed Courses Page-->
+    
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device=width, initial-scale=1">
+    <title>Learning to Skydive | Completed Courses</title>
+    <link rel="shortcut icon" href="../images/parachute-836105_1280.png">
+    <link rel="stylesheet" href="../styles/normalize.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <link rel="stylesheet" href="../styles/slicknav.css">
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="../js/jquery.slicknav.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function (){
+        $('#nav_menu').slicknav({prependTo:"#mobile_menu"}); });
+    </script>
+</head>
+
+<body>
+    <header>
+        <img src="../images/25000ft(1).JPG" alt="View from 25,000 ft.">
+        <h1>My Experience Learning to Skydive</h1>
+    </header>
+    <nav id="mobile_menu"></nav>
+    <nav id="nav_menu">
+        <ul>
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="../media/media.html">Photos/Videos</a></li>
+            <li id="courses"><a href="complete.html" class="current">Completed Courses</a>
+                <ul>
+                    <li><a href="completed_courses/airborne.html">Airborne</a></li>
+                    <li><a href="completed_courses/dbsl.html">DBSL</a></li>
+                    <li><a href="completed_courses/idis.html">IDIS</a></li>
+                </ul>
+            </li>
+            <li><a href="future.html">Future Courses</a></li>
+            <li><a href="../signup.html">Member Sign Up</a></li>
+        </ul>
+    </nav>
+    <main>
+      <h1>Completed Courses</h1>
+       <section id="completed">
+        <p>The following, are the three courses that I was fortunate enough to attend during my short time in the U.S. Military.  Browse through these pages to learn a little bit about what these courses offer and teach, and how or why one would attend them.</p>
+        <h2 class="cplt"><a href="completed_courses/airborne.html">Basic Airborne Course</a></h2>
+        <p class="complete">This is the first course you have to take to become a jumper in the military.</p>
+        <h2 class="cplt"><a href="completed_courses/dbsl.html">Double Bag Static Line</a></h2>
+        <p class="complete">This course teaches HAHO jumping.</p>
+        <h2 class="cplt"><a href="completed_courses/idis.html">IDIS</a></h2>
+        <p class="complete">This course teaches tactical insertion as a team.</p>
+        </section>
+    </main>
+    <footer>
+        <p>All images/videos on this page are property of Abhi Bastiany unless otherwise stated.</p>
+    </footer>
+</body>
